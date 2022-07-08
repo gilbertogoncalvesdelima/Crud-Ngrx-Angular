@@ -44,8 +44,11 @@ ou
 http://localhost:3000/Usuarios/1
 
 npm install @ngrx/store --save
+
 $ npm install @ngrx/effects --save
+
 npm install @ngrx/store-devtools --save
 
 extensão crome ngrx
+
 Redux DevTools
