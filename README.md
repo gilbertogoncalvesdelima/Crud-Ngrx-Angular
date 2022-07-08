@@ -1,27 +1,51 @@
-# CursoNgrx
+## Bootstrap
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+```js
+npm install bootstrap
+```
 
-## Development server
+## Concurrently,
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ele irá executar o ng server e o json-server
 
-## Code scaffolding
+```js
+npm install concurrently
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+"Start" = tem que estar desta forma
 
-## Build
+```js
+{
+"name": "curso-ngrx",
+"version": "0.0.0",
+"scripts": {
+"ng": "ng",
+"start": "concurrently \"ng serve\" \"json-server --watch db json\"" ,
+"build": "ng build",
+"watch": "ng build --watch --configuration development",
+"test": "ng test"
+},
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## json-server
 
-## Running unit tests
+npm install json-server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Para emular o projeto
 
-## Running end-to-end tests
+npm start
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Para verificar o json
 
-## Further help
+http://localhost:3000/Usuarios
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ou
+
+http://localhost:3000/Usuarios/1
+
+npm install @ngrx/store --save
+$ npm install @ngrx/effects --save
+npm install @ngrx/store-devtools --save
+
+extensão crome ngrx
+Redux DevTools
